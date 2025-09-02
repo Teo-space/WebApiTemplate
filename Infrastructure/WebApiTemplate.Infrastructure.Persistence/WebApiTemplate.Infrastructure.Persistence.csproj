@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+		<InternalsVisibleTo Include="WebApiTemplate.Tests.Unit" />
+		<InternalsVisibleTo Include="WebApiTemplate.Tests.Infrastructure" />
+		<InternalsVisibleTo Include="WebApiTemplate.Tests.Integration" />
+		<InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.18" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\WebApiTemplate.Core.Domain\WebApiTemplate.Core.Domain.csproj" />
+	  <ProjectReference Include="..\..\Core\WebApiTemplate.Core.Interfaces\WebApiTemplate.Core.Interfaces.csproj" />
+	</ItemGroup>
+
+</Project>

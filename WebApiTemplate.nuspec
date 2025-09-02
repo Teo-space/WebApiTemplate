@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+	<title>WebApiTemplate</title>
+    <description>Create Web Api Solution with Clean Architecture</description>
+    <authors>Teo</authors>
+	<tags>dotnet Web</tags>
+	<language>en-US</language>
+    <id>Teo.WebApiTemplate</id>
+    <version>1.0.0</version>
+	<license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<packageTypes>
+		<packageType name="Template" />
+	</packageTypes>
+  </metadata>
+  
+	<files>
+		<file src="**" exclude=".git\**;.vs\**;**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;_rels\**\*;package\**\*" />
+	</files>
+</package>

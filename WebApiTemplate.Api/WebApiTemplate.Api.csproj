@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <UserSecretsId>7c6bed55-5067-497d-a816-d13e603654ef</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.19" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WebApiTemplate.Core.Interfaces\WebApiTemplate.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\Core\WebApiTemplate.Core.Services\WebApiTemplate.Core.Services.csproj" />
+    <ProjectReference Include="..\Infrastructure\WebApiTemplate.Infrastructure.Persistence\WebApiTemplate.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\Infrastructure\WebApiTemplate.Infrastructure.Services\WebApiTemplate.Infrastructure.Services.csproj" />
+  </ItemGroup>
+
+</Project>

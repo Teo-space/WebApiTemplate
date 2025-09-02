@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<RootNamespace>WebApiTemplate.Tests.Integration</RootNamespace>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<OutputType>Exe</OutputType>
+		<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.18" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.18" />
+		<PackageReference Include="Shouldly" Version="4.3.0" />
+		<PackageReference Include="Moq" Version="4.20.70" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageReference Include="xunit.v3" Version="3.0.1" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\WebApiTemplate.Core.Domain\WebApiTemplate.Core.Domain.csproj" />
+		<ProjectReference Include="..\..\Core\WebApiTemplate.Core.Interfaces\WebApiTemplate.Core.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Core\WebApiTemplate.Core.Services\WebApiTemplate.Core.Services.csproj" />
+		<ProjectReference Include="..\..\Infrastructure\WebApiTemplate.Infrastructure.Persistence\WebApiTemplate.Infrastructure.Persistence.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Xunit" />
+	</ItemGroup>
+
+</Project>

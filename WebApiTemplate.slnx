@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="Core/WebApiTemplate.Core.Domain/WebApiTemplate.Core.Domain.csproj" />
+    <Project Path="Core/WebApiTemplate.Core.Input/WebApiTemplate.Core.Input.csproj" />
+    <Project Path="Core/WebApiTemplate.Core.Interfaces/WebApiTemplate.Core.Interfaces.csproj" />
+    <Project Path="Core/WebApiTemplate.Core.Output/WebApiTemplate.Core.Output.csproj" />
+    <Project Path="Core/WebApiTemplate.Core.Services/WebApiTemplate.Core.Services.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/WebApiTemplate.Infrastructure.Persistence/WebApiTemplate.Infrastructure.Persistence.csproj" />
+    <Project Path="Infrastructure/WebApiTemplate.Infrastructure.Services/WebApiTemplate.Infrastructure.Services.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/WebApiTemplate.Tests.Infrastructure.Persistence/WebApiTemplate.Tests.Infrastructure.Persistence.csproj" />
+    <Project Path="Tests/WebApiTemplate.Tests.Integration/WebApiTemplate.Tests.Integration.csproj" />
+    <Project Path="Tests/WebApiTemplate.Tests.Unit/WebApiTemplate.Tests.Unit.csproj" />
+  </Folder>
+  <Folder Name="/Элементы решения/">
+    <File Path="LINKS.MD" />
+    <File Path="NUGET.MD" />
+    <File Path="README.md" />
+    <File Path="USAGE.MD" />
+  </Folder>
+  <Project Path="WebApiTemplate.Api/WebApiTemplate.Api.csproj" />
+</Solution>
