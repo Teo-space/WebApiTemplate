@@ -1,0 +1,14 @@
+{
+    "name": "WebApiTemplate",
+    "identity": "Teo.WebApiTemplate", // Unique name for this template
+    "shortName": "WebApiTemplate", // Short name that can be used on the cli
+    "author": "Teo",
+    "sourceName": "WebApiTemplate", // Will replace the string 'WebApiTemplate' with the value provided via -n.
+
+    "preferNameDirectory": true,
+    "classifications": [ "Web", "Solution", "Web API" ],
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+    }
+}
